@@ -1,0 +1,54 @@
+    public static void main(String[] args) {
+
+        System.out.println("Please enter your 6 digit number");
+        Scanner scanner = new Scanner(System.in);
+        int inputNumber = 578432;//scanner.nextInt();
+
+        int num1,num2,num3,num4,num5,num6;
+
+        if (inputNumber<99_999) {
+
+            System.out.println("Your number is too small");
+        }
+        else if (inputNumber>999_999) {
+            System.out.println("Your number is too big");
+
+        }
+        else {
+
+            num1 = inputNumber/100_000;
+            inputNumber %= 100_000;
+
+            num2 = inputNumber/10_000;
+            inputNumber %= 10_000;
+
+            num3 = inputNumber/1_000;
+            inputNumber %= 1_000;
+
+            num4 = inputNumber/100;
+            inputNumber %= 100;
+
+            num5 = inputNumber/10;
+            inputNumber %= 10;
+
+            num6 = inputNumber /1;
+
+            System.out.println("Your number is "+num1+num2+num3+num4+num5+num6);
+            System.out.println(("Multiplication of all digits is ")+(num1*num2*num3*num4*num5*num6));
+            System.out.println(("The Sum of all digits is ")+(num1+num2+num3+num4+num5+num6));
+
+
+
+        }
+
+        /*
+        . Write a program that will accept only 6 digit
+numbers like 578432 and find multiplication
+(5*7*8*4*3*2) of all digits and sum
+(5+7+8+4+3+2)of all digits.
+Example 1:
+578432
+Multiplication of all digits is 6720
+The Sum of all digits is 29
+         */
+    }
