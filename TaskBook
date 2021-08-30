@@ -1,0 +1,33 @@
+package JavaHeadFirst;
+
+public class Pracrtice2 {
+
+    public static void main(String[] args) {
+
+        int x = 0;
+
+        while(x<4) {
+            if (x<1) {
+                System.out.println("a noice");
+            }
+            if (x>1) {
+                System.out.println("an oyster");
+                x=x+2;
+            }
+
+            if ( x == 1) {
+                System.out.println("annoys");
+            }
+
+            if (x>3) {
+
+
+
+            }
+            System.out.println("");
+            x++;
+            }
+        // a noise
+        // annoys
+        // an oyster
+        }
